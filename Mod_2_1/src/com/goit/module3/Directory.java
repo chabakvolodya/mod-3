@@ -1,4 +1,4 @@
-package my.pack;
+package com.goit.module3;
 
 import java.util.List;
 

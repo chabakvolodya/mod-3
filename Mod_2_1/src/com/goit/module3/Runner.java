@@ -1,11 +1,8 @@
-import my.pack.Directory;
-import my.pack.File;
-import my.pack.file.AudioFile;
-import my.pack.file.ImageFile;
-import my.pack.file.TextFile;
+package com.goit.module3;
+
+import com.goit.module3.file.*;
 
 import java.util.ArrayList;
-import java.util.List;
 
 /**
  * Created by Администратор on 22.12.2015.
