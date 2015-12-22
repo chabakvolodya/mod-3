@@ -1,8 +1,6 @@
 package my.pack;
 
-import my.pack.file.*;
-
-import java.util.ArrayList;
+import java.util.List;
 
 
 /**
@@ -10,17 +8,46 @@ import java.util.ArrayList;
  */
 public class Directory {
 
-    public static void main(String[] args) {
+    private String name;
+    private String absolutePath;
 
-        ArrayList<File> files = new ArrayList<File>();
+    private List<Directory> childDirectories;
+    private List<File> files;
 
-        files.add(new Text("TextFile"));
-        files.add(new Audio("AudioFile"));
-        files.add(new Image("ImageFile"));
+    public Directory(String name, String absolutePath) {
+        this.name = name;
+        this.absolutePath = absolutePath;
+    }
 
-        for (File file : files)
-        {
-            System.out.println(file.getName());
-        }
+    public List<Directory> getChildDirectories() {
+        return childDirectories;
+    }
+
+    public void setChildDirectories(List<Directory> childDirectories) {
+        this.childDirectories = childDirectories;
+    }
+
+    public List<File> getFiles() {
+        return files;
+    }
+
+    public void setFiles(List<File> files) {
+        this.files = files;
+    }
+
+    public String getAbsolutePath() {
+        return absolutePath;
+    }
+
+    public void setAbsolutePath(String absolutePath) {
+        this.absolutePath = absolutePath;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
     }
 }
